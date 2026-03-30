@@ -1,0 +1,9 @@
+name: web-tng
+language: csharp
+build: dotnet build AckWeb.sln
+test: dotnet test AckWeb.sln
+risky_paths:
+  - AckWeb.Api/         # API endpoints
+definition_of_done:
+  - build succeeds
+  - tests pass
